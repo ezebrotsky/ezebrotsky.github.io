@@ -1,0 +1,29 @@
+{
+  "generator-ngx-rocket": {
+    "version": "8.1.0",
+    "props": {
+      "location": "path",
+      "strict": false,
+      "skipInstall": false,
+      "skipQuickstart": false,
+      "initGit": true,
+      "usePrefix": true,
+      "appName": "ezebrotsky githoub io",
+      "target": ["web"],
+      "pwa": false,
+      "ui": "material",
+      "layout": "simple",
+      "auth": false,
+      "lazy": false,
+      "angulartics": false,
+      "languages": ["en-US"],
+      "tools": ["prettier", "jest"],
+      "utility": [],
+      "deploy": "github",
+      "projectName": "ezebrotsky-githoub-io",
+      "packageManager": "npm",
+      "mobile": [],
+      "desktop": []
+    }
+  }
+}
