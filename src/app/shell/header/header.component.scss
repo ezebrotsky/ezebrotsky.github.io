@@ -1,19 +1,23 @@
-@import "src/theme/theme-variables";
-
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
+  background-color: #c7c9cb;
+  padding: 15px;
+  text-align: center;
 }
 
 .brand {
-  color: mat-color($app-primary, "default-contrast");
+  color: #6c6c6c;
   text-decoration: none;
-  padding-right: 1rem;
+  text-align: center;
+  width: 100%;
 }
 
-.menu-button {
-  margin-right: 1rem;
+.title {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.subtitle {
+  font-family: "Lato";
+  font-size: 12px;
 }

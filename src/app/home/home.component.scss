@@ -1,14 +1,146 @@
 .container {
-  text-align: center;
-  padding: 1em;
+  width: 100%;
+  font-family: "Lato";
 }
 
-.logo {
-  width: 150px;
-  margin: 0 auto;
+.content {
+  position: absolute;
+  width: 70%;
+  right: 0;
+  color: #898989;
+  font-weight: 100;
+  padding: 25px;
+  font-size: 15px;
 }
 
-q {
-  font-style: italic;
-  quotes: "« " " »";
+.content h3 {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #6c6c6c;
+}
+
+.content h4 {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #6c6c6c;
+  display: flex;
+}
+
+.content h4 .fecha {
+  position: absolute;
+  right: 0;
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+.section {
+  background-color: #76a9d5;
+  margin: 10px -25px;
+  padding: 1px;
+}
+
+.grey {
+  background-color: #c7c9cb;
+}
+
+.grey h3 {
+  color: #6c6c6c !important;
+  margin: 5px 25px;
+  display: flex;
+}
+
+.grey .subtitle {
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.section h3 {
+  color: #fff;
+  margin: 5px 25px;
+}
+
+.sidebar {
+  background-color: #171d2d;
+  width: 30%;
+  position: absolute;
+  color: #fff;
+}
+
+.sidebar-content {
+  padding: 15px;
+  margin-left: 10px;
+}
+
+.sidebar-content h3 {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.sidebar-content h4 {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.sidebar-content .contact-details {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sidebar-content .skill-details {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+a :link :visited :hover {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: separate;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .sidebar {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content h4 {
+    width: 100%;
+  }
+
+  .content h4 .fecha {
+    width: 100%;
+    position: relative;
+  }
+
+  .grey h3 {
+    width: 100%;
+  }
+
+  .grey .subtitle {
+    width: 100%;
+    position: relative;
+  }
 }
