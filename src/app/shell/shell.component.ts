@@ -11,21 +11,14 @@ import { untilDestroyed } from '@core';
   styleUrls: ['./shell.component.scss'],
 })
 export class ShellComponent implements OnInit, OnDestroy {
-  @ViewChild('sidenav', { static: false }) sidenav!: MatSidenav;
-
   constructor(private media: MediaObserver) {}
 
   ngOnInit() {
     // Automatically close side menu on screens > sm breakpoint
-    this.media
-      .asObservable()
-      .pipe(
-        filter((changes: MediaChange[]) =>
-          changes.some((change) => change.mqAlias !== 'xs' && change.mqAlias !== 'sm')
-        ),
-        untilDestroyed(this)
-      )
-      .subscribe(() => this.sidenav.close());
+    this.media.asObservable().pipe(
+      filter((changes: MediaChange[]) => changes.some((change) => change.mqAlias !== 'xs' && change.mqAlias !== 'sm')),
+      untilDestroyed(this)
+    );
   }
 
   ngOnDestroy() {
